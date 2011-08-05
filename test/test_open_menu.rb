@@ -10,14 +10,14 @@ class TestOpenMenu < Test::Unit::TestCase
     assert_kind_of Hash, result[:menus].first
     assert_kind_of Hash, result[:menus].first[:duration]
     assert_kind_of Hash, result[:menus].first[:groups].first
-    assert_kind_of Array, result[:menus].first[:groups].first[:group_options]
-    assert_kind_of Hash, result[:menus].first[:groups].first[:group_options].first
+    assert_kind_of Array, result[:menus].first[:groups].first[:options]
+    assert_kind_of Hash, result[:menus].first[:groups].first[:options].first
     assert_kind_of Array, result[:menus].first[:groups].first[:items]
     assert_kind_of Hash, result[:menus].first[:groups].first[:items].first
     assert_kind_of Array, result[:menus].first[:groups].first[:items].first[:sizes]
     assert_kind_of Hash, result[:menus].first[:groups].first[:items].first[:sizes].first
-    assert_kind_of Array, result[:menus].first[:groups].first[:items].first[:item_options]
-    assert_kind_of Hash, result[:menus].first[:groups].first[:items].first[:item_options].first
+    assert_kind_of Array, result[:menus].first[:groups].first[:items].first[:options]
+    assert_kind_of Hash, result[:menus].first[:groups].first[:items].first[:options].first
     assert_kind_of Array, result[:menus].first[:groups].first[:items].first[:tags]
     assert_kind_of String, result[:menus].first[:groups].first[:items].first[:tags].first
     assert_kind_of Array, result[:menus].first[:groups].first[:items].first[:images]

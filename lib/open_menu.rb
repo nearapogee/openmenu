@@ -111,7 +111,7 @@ module OpenMenu
                   _option[:options] = option_items
                   item_options << _option
                 end
-                _item[:item_options] = item_options if item_options.length > 0
+                _item[:options] = item_options if item_options.length > 0
 
                 # Images
                 images = Array.new
@@ -137,7 +137,7 @@ module OpenMenu
             end
 
             _group[:items] = items if items.length > 0
-            _group[:group_options] = group_options if group_options.length > 0
+            _group[:options] = group_options if group_options.length > 0
             groups << _group
           end
         end
