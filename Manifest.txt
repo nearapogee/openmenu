@@ -3,5 +3,5 @@ History.txt
 Manifest.txt
 README.txt
 Rakefile
-lib/open_menu.rb
-test/test_open_menu.rb
+lib/openmenu.rb
+test/test_openmenu.rb

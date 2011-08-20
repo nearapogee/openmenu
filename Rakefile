@@ -3,14 +3,8 @@
 require 'rubygems'
 require 'hoe'
 
-# Hoe.plugin :bundler
-# Hoe.plugin :compiler
-# Hoe.plugin :gem_prelude_sucks
-# Hoe.plugin :git
-# Hoe.plugin :inline
+Hoe.plugin :git
 Hoe.plugin :minitest
-# Hoe.plugin :racc
-# Hoe.plugin :rubyforge
 
 Hoe.spec 'openmenu' do
   developer('Matt Smith', 'matts@nearapogee.com')

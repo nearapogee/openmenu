@@ -1,7 +1,7 @@
 require 'nokogiri'
 
-module OpenMenu
-  VERSION = '0.1.2'
+module Openmenu
+  VERSION = '0.1.3'
 
   def self.parse(xml)
     result = {}

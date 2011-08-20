@@ -1,9 +1,10 @@
 require "test/unit"
-require "open_menu"
+require "openmenu"
 
-class TestOpenMenu < Test::Unit::TestCase
+class TestOpenmenu < Test::Unit::TestCase
   def test_parse
-    result = OpenMenu.parse(sample_om)
+    result = Openmenu.parse(sample_om)
+    #puts result.inspect
     assert_kind_of Hash, result
     assert_kind_of Array, result[:menus]
     assert_equal 1, result[:menus].length
