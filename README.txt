@@ -1,10 +1,14 @@
 = openmenu
 
-* http://nearpogee.rubyforge.org/openmenu
+* https://github.com/matthewcalebsmith/openmenu
 
 == DESCRIPTION:
 
-Openmenu is parser for OpenMenu.
+Openmenu is parser for OpenMenu xml files.
+
+NOTE: This is an early release. There is some refactoring to be done, but 
+the interface should stay the same.
+
 
 == FEATURES/PROBLEMS:
 
@@ -12,11 +16,16 @@ Openmenu is parser for OpenMenu.
 
 == SYNOPSIS:
 
-  OpenMenu.parse(open('http://openmenu.com/menu/sample'))
+  om = OpenMenu.parse(open('http://openmenu.com/menu/sample'))
+  om.restaurant_name # => 'My Restaurant'
+  om.menus.inspect # => [#<OpenMenu::Menu:0x007fdb0a1facd8 @name="Main Menu", ...>,
+#<OpenMenu::Menu:0x007fdb0c027558 @name="Late Night Menu", ...]
+  om.menus.first.groups.first.items.first.name # => 'Coconut Shrimp'
+  om.menus.first.groups.first.items.first.price # => 7.95
 
 == REQUIREMENTS:
 
-* nokogiri
+* nokogiri-happymapper
 
 == INSTALL:
 
