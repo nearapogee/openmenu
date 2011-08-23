@@ -1,9 +1,0 @@
-.autotest
-History.txt
-Manifest.txt
-README.txt
-Rakefile
-lib/open_menu.rb
-lib/openmenu.rb
-test/sample.xml
-test/test_openmenu.rb

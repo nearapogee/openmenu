@@ -5,5 +5,16 @@ README.txt
 Rakefile
 lib/open_menu.rb
 lib/openmenu.rb
+pkg/openmenu-0.1.4.gem
+pkg/openmenu-0.1.4/.autotest
+pkg/openmenu-0.1.4/.gemtest
+pkg/openmenu-0.1.4/History.txt
+pkg/openmenu-0.1.4/Manifest.txt
+pkg/openmenu-0.1.4/README.txt
+pkg/openmenu-0.1.4/Rakefile
+pkg/openmenu-0.1.4/lib/open_menu.rb
+pkg/openmenu-0.1.4/lib/openmenu.rb
+pkg/openmenu-0.1.4/test/sample.xml
+pkg/openmenu-0.1.4/test/test_openmenu.rb
 test/sample.xml
 test/test_openmenu.rb
