@@ -114,6 +114,7 @@ class TestOpenMenu< Test::Unit::TestCase
     assert_equal 'USD', menus.first.currency
     assert_equal 'disabled', menus.first.disabled
     assert_equal true, menus.first.disabled?
+    assert_equal 'Great food, everyday.', menus.first.description
 
     assert_equal 'lunch-dinner', menus.first.duration.name
     assert_equal '11:00', menus.first.duration.start
@@ -124,6 +125,7 @@ class TestOpenMenu< Test::Unit::TestCase
     assert_equal 2, group.uid
     assert_equal 'disabled', group.disabled
     assert_equal true, group.disabled?
+    assert_equal 'Succulent appetizers.', group.description
 
     option = menus.first.groups[1].options.first
     assert_equal 'Dressings', option.name
@@ -322,7 +324,7 @@ http://factual.com/31b8bfbf-08a3-478f-a4a4-d3e3143a37fb
 </restaurant_info>
 <menus>
 <menu name="Main Menu" currency_symbol="USD" uid="25" disabled="disabled">
-<menu_description/>
+<menu_description>Great food, everyday.</menu_description>
 <menu_duration>
 <menu_duration_name>lunch-dinner</menu_duration_name>
 <menu_duration_time_start>11:00</menu_duration_time_start>
@@ -330,7 +332,7 @@ http://factual.com/31b8bfbf-08a3-478f-a4a4-d3e3143a37fb
 </menu_duration>
 <menu_groups>
 <menu_group name="Appetizers" uid="2" disabled="disabled">
-<menu_group_description/>
+<menu_group_description>Succulent appetizers.</menu_group_description>
 <menu_items>
 <menu_item uid="65" disabled="disabled" special="special" vegetarian="vegetarian" vegan="vegan" kosher="kosher" halal="halal">
 <menu_item_name>Coconut Shrimp</menu_item_name>

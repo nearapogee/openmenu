@@ -1,5 +1,5 @@
 class OpenMenu
-  VERSION = '0.1.5'
+  VERSION = '0.1.6'
   include HappyMapper
   tag 'omf'
 
@@ -178,12 +178,11 @@ class OpenMenu
     attribute :uid, Integer
     attribute :currency, String, :tag => 'currency_symbol'
     attribute :disabled, String 
-
-    element :description, String, :tag => "menu_description"
-
     def disabled?
       disabled == 'disabled'
     end
+
+    element :description, String, :tag => "menu_description"
 
     class Duration
       include HappyMapper
@@ -205,6 +204,8 @@ class OpenMenu
       def disabled?
         disabled == 'disabled'
       end
+
+      element :description, String, :tag => 'menu_group_description'
 
       class Option
         include HappyMapper

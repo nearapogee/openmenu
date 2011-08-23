@@ -18,8 +18,8 @@ the interface should stay the same.
 
   om = OpenMenu.parse(open('http://openmenu.com/menu/sample'))
   om.restaurant_name # => 'My Restaurant'
-  om.menus.inspect # => [#<OpenMenu::Menu:0x007fdb0a1facd8 @name="Main Menu", ...>,
-#<OpenMenu::Menu:0x007fdb0c027558 @name="Late Night Menu", ...]
+  om.menus.inspect # => [#<OpenMenu::Menu:0x007fdb0a1facd8 @name="Main Menu",
+...>, #<OpenMenu::Menu:0x007fdb0c027558 @name="Late Night Menu", ...]
   om.menus.first.groups.first.items.first.name # => 'Coconut Shrimp'
   om.menus.first.groups.first.items.first.price # => 7.95
 
