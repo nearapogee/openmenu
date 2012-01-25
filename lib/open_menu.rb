@@ -22,6 +22,7 @@ class OpenMenu
   element :full_description, String, :deep => true
   element :business_type, String, :deep => true
   element :location_id, String, :deep => true
+  element :mobile, Integer, :deep => true
   element :longitude, String, :deep => true
   element :latitude, String, :deep => true
   element :utc_offset, Float, :deep => true

@@ -9,8 +9,8 @@ class TestOpenMenu< Test::Unit::TestCase
     assert_equal "sample", @om.uuid
     assert_equal "2011-08-19", @om.date_created
     assert_equal 1, @om.accuracy
-    assert_equal 'private', @om.private
-    assert @om.private?
+    assert_equal 'private', @om.private # 1.6
+    assert @om.private? # 1.6
 
     assert_equal 1.6, @om.version 
 
@@ -19,6 +19,7 @@ class TestOpenMenu< Test::Unit::TestCase
     assert_equal "Full Description", @om.full_description
     assert_equal "independent", @om.business_type
     assert_equal "x123z", @om.location_id
+    assert_equal 1, @om.mobile
     assert_equal "-81.039833", @om.longitude
     assert_equal "33.999458", @om.latitude
     assert_equal -5.00, @om.utc_offset
@@ -726,6 +727,7 @@ http://factual.com/31b8bfbf-08a3-478f-a4a4-d3e3143a37fb
 <brief_description>Brief Description</brief_description>
 <full_description>Full Description</full_description>
 <location_id>x123z</location_id>
+<mobile>1</mobile>
 <longitude>-81.039833</longitude>
 <latitude>33.999458</latitude>
 <utc_offset>-5.00</utc_offset>
