@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<omf uuid="sample" date_created="2011-08-19" accuracy="1">
+<openmenu>
+<version>1.5</version>
+<crosswalks>
+</crosswalks>
+</openmenu>
+<restaurant_info>
+<restaurant_name>My Restaurant</restaurant_name>
+<business_type>independent</business_type>
+<brief_description>Sample restaurant in the OpenMenu Format standard</brief_description>
+<full_description>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ac libero neque, quis laoreet dolor. Proin vitae erat lacus. 
+	    
+Aliquam sed lectus ligula, sed pharetra tortor. Nam rutrum ipsum ut quam vestibulum vestibulum. Ut posuere rhoncus quam, id semper ligula bibendum quis. Vestibulum accumsan, neque id tristique accumsan, risus diam vehicula massa, at facilisis ligula tortor et elit. Nulla facilisi. Mauris ultrices volutpat lorem eu convallis. </full_description>
+<location_id>x123z</location_id>
+<longitude>-81.039833</longitude>
+<latitude>33.999458</latitude>
+<utc_offset>-5.00</utc_offset>
+<address_1>803 Gervais Street</address_1>
+<address_2></address_2>
+<city_town>Columbia</city_town>
+<state_province>SC</state_province>
+<postal_code>29202</postal_code>
+<country>US</country>
+<region_area></region_area>
+<phone>(555) 555-5555</phone>
+<fax>(555) 888-8888</fax>
+<website_url>http://openmenu.com/</website_url>
+<omf_file_url>http://openmenu.com/menu/sample</omf_file_url>
+<logo_urls>
+<logo_url type="Thumbnail" media="All">http://openmenu.com/images/ico-32-openmenu.png</logo_url>
+<logo_url type="Full" media="All">http://openmenu.com/images/sample_logo_full.png</logo_url>
+</logo_urls>
+<environment>
+<seating_qty></seating_qty>
+<max_group_size>12</max_group_size>
+<age_level_preference></age_level_preference>
+<smoking_allowed>0</smoking_allowed>
+<takeout_available>1</takeout_available>
+<delivery_available radius="" fee=""></delivery_available>
+<catering_available></catering_available>
+<reservations></reservations>
+<alcohol_type></alcohol_type>
+<music_type></music_type>
+<pets_allowed>0</pets_allowed>
+<wheelchair_accessible></wheelchair_accessible>
+<dress_code>casual</dress_code>
+<cuisine_type_primary>Steakhouse</cuisine_type_primary>
+<cuisine_type_secondary></cuisine_type_secondary>
+<seating_locations>
+<seating_location>outdoor</seating_location>
+<seating_location>indoor</seating_location>
+</seating_locations>
+<accepted_currencies>
+<accepted_currency>USD</accepted_currency>
+</accepted_currencies>
+<online_reservations>
+</online_reservations>
+<online_ordering>
+</online_ordering>
+<operating_days>
+<operating_day>
+<day_of_week>1</day_of_week>
+<open_time>11:00</open_time>
+<close_time>22:00</close_time>
+</operating_day>
+<operating_day>
+<day_of_week>2</day_of_week>
+<open_time>11:00</open_time>
+<close_time>22:00</close_time>
+</operating_day>
+<operating_day>
+<day_of_week>3</day_of_week>
+<open_time>11:00</open_time>
+<close_time>22:00</close_time>
+</operating_day>
+<operating_day>
+<day_of_week>4</day_of_week>
+<open_time>11:00</open_time>
+<close_time>22:00</close_time>
+</operating_day>
+<operating_day>
+<day_of_week>5</day_of_week>
+<open_time>11:00</open_time>
+<close_time>22:00</close_time>
+</operating_day>
+<operating_day>
+<day_of_week>6</day_of_week>
+<open_time>11:00</open_time>
+<close_time>22:00</close_time>
+</operating_day>
+<operating_day>
+<day_of_week>7</day_of_week>
+<open_time></open_time>
+<close_time></close_time>
+</operating_day>
+</operating_days>
+<parking></parking>
+</environment>
+<contacts>
+<contact type="primary">
+<first_name>Chris</first_name>
+<last_name>Hanscom</last_name>
+<email>menu@openmenu.com</email>
+</contact>
+</contacts>
+<parent_company>
+<parent_company_name></parent_company_name>
+<parent_company_website></parent_company_website>
+<address_1></address_1>
+<address_2></address_2>
+<city_town></city_town>
+<state_province></state_province>
+<postal_code></postal_code>
+<country></country>
+<phone></phone>
+<fax></fax>
+</parent_company>
+</restaurant_info>
+<menus>
+<menu name="Main Menu" currency_symbol="USD" uid="25">
+<menu_description></menu_description>
+<menu_duration>
+<menu_duration_name>lunch-dinner</menu_duration_name>
+<menu_duration_time_start>11:00</menu_duration_time_start>
+<menu_duration_time_end>22:00</menu_duration_time_end>
+</menu_duration>
+<menu_groups>
+<menu_group name="Appetizers" uid="2">
+<menu_group_description></menu_group_description>
+<menu_items>
+<menu_item>
+<menu_item_name>Coconut Shrimp</menu_item_name>
+<menu_item_description>Crispy Coconut Shrimp &amp; tangy mango lime sauce</menu_item_description>
+<menu_item_price>7.95</menu_item_price>
+<menu_item_calories>350</menu_item_calories>
+<menu_item_image_urls>
+<menu_item_image_url width="" height="" type="Thumbnail" media="Web">http://openmenu.com/images/coconut_shrimp.jpg</menu_item_image_url>
+</menu_item_image_urls>
+</menu_item>
+<menu_item>
+<menu_item_name>Tempura Onion Rings</menu_item_name>
+<menu_item_description>With a honey Thai sauce</menu_item_description>
+<menu_item_price>7.95</menu_item_price>
+<menu_item_heat_index>1</menu_item_heat_index>
+</menu_item>
+<menu_item special="special">
+<menu_item_name>Calamari</menu_item_name>
+<menu_item_description>Our calamari is lightly fried and tossed with a sweet and spicy Asian mango sauce.</menu_item_description>
+<menu_item_price></menu_item_price>
+<menu_item_heat_index>2</menu_item_heat_index>
+<menu_item_sizes>
+<menu_item_size>
+<menu_item_size_name>small</menu_item_size_name>
+<menu_item_size_description></menu_item_size_description>
+<menu_item_size_price>6.95</menu_item_size_price>
+</menu_item_size>
+<menu_item_size>
+<menu_item_size_name>large</menu_item_size_name>
+<menu_item_size_description></menu_item_size_description>
+<menu_item_size_price>8.95</menu_item_size_price>
+</menu_item_size>
+</menu_item_sizes>
+</menu_item>
+</menu_items>
+</menu_group>
+<menu_group name="Salads" uid="3">
+<menu_group_description></menu_group_description>
+<menu_group_options>
+<menu_group_option name="Dressings">
+<menu_group_option_information></menu_group_option_information>
+<menu_group_option_item>
+<menu_group_option_name>Italian</menu_group_option_name>
+<menu_group_option_additional_cost>1.00</menu_group_option_additional_cost>
+</menu_group_option_item>
+<menu_group_option_item>
+<menu_group_option_name>French</menu_group_option_name>
+<menu_group_option_additional_cost>1.25</menu_group_option_additional_cost>
+</menu_group_option_item>
+<menu_group_option_item>
+<menu_group_option_name>Thousand Island</menu_group_option_name>
+<menu_group_option_additional_cost>1.00</menu_group_option_additional_cost>
+</menu_group_option_item>
+</menu_group_option>
+</menu_group_options>
+<menu_items>
+<menu_item>
+<menu_item_name>Chef Salad</menu_item_name>
+<menu_item_description>Best chef salad in a 20 mile radius</menu_item_description>
+<menu_item_price></menu_item_price>
+<menu_item_sizes>
+<menu_item_size>
+<menu_item_size_name>half</menu_item_size_name>
+<menu_item_size_description></menu_item_size_description>
+<menu_item_size_price>6.95</menu_item_size_price>
+</menu_item_size>
+<menu_item_size>
+<menu_item_size_name>full</menu_item_size_name>
+<menu_item_size_description></menu_item_size_description>
+<menu_item_size_price>8.95</menu_item_size_price>
+</menu_item_size>
+</menu_item_sizes>
+</menu_item>
+<menu_item special="special">
+<menu_item_name>Cobb Salad</menu_item_name>
+<menu_item_description>Iceberg lettuce topped with turkey, ham, hard cooked eggs, avocado, diced tomatoes, bacon, bleu cheese crumbles and black olives</menu_item_description>
+<menu_item_price></menu_item_price>
+<menu_item_sizes>
+<menu_item_size>
+<menu_item_size_name>half</menu_item_size_name>
+<menu_item_size_description></menu_item_size_description>
+<menu_item_size_price>6.95</menu_item_size_price>
+</menu_item_size>
+<menu_item_size>
+<menu_item_size_name>full</menu_item_size_name>
+<menu_item_size_description></menu_item_size_description>
+<menu_item_size_price>8.95</menu_item_size_price>
+</menu_item_size>
+</menu_item_sizes>
+</menu_item>
+<menu_item>
+<menu_item_name>Ceasar Salad</menu_item_name>
+<menu_item_description>Fresh romain lettuce with aged parmesan reggiano</menu_item_description>
+<menu_item_price>9.95</menu_item_price>
+</menu_item>
+<menu_item vegetarian="vegetarian">
+<menu_item_name>Garden Salad</menu_item_name>
+<menu_item_description>Filled with lettuce, tomatoes, carrots, radishes, cucumbers and shredded cheese</menu_item_description>
+<menu_item_price>8.95</menu_item_price>
+</menu_item>
+</menu_items>
+</menu_group>
+<menu_group name="Entrees" uid="1">
+<menu_group_description></menu_group_description>
+<menu_items>
+<menu_item uid="1">
+<menu_item_name>Rack of Lamb</menu_item_name>
+<menu_item_description>Coffee Citrus Crusted Lamb </menu_item_description>
+<menu_item_price>22.95</menu_item_price>
+</menu_item>
+<menu_item uid="2">
+<menu_item_name>Soft Shell Crabs</menu_item_name>
+<menu_item_description>Almond encrusted, seasoned and sauteed in butter to a crispy brown</menu_item_description>
+<menu_item_price>19.95</menu_item_price>
+<menu_item_allergy_information allergens="shellfish, nuts">Reference allergens for allergy information</menu_item_allergy_information>
+</menu_item>
+<menu_item uid="3" special="special">
+<menu_item_name>Cioppino</menu_item_name>
+<menu_item_description>Fresh fish, scallops, mussels, calamari, and shrimp in a tomato-garlic saffron broth over linguini</menu_item_description>
+<menu_item_price>24.95</menu_item_price>
+</menu_item>
+</menu_items>
+</menu_group>
+</menu_groups>
+</menu>
+<menu name="Late Night Menu" currency_symbol="USD" uid="35">
+<menu_description></menu_description>
+<menu_duration>
+<menu_duration_name>late-night</menu_duration_name>
+<menu_duration_time_start>20:00</menu_duration_time_start>
+<menu_duration_time_end>23:00</menu_duration_time_end>
+</menu_duration>
+<menu_groups>
+<menu_group name="Bar Food" uid="1">
+<menu_group_description></menu_group_description>
+<menu_items>
+<menu_item>
+<menu_item_name>Cheese Sticks</menu_item_name>
+<menu_item_description>Cheese sticks with marinara sauce</menu_item_description>
+<menu_item_price>6.95</menu_item_price>
+</menu_item>
+<menu_item>
+<menu_item_name>Coconut Shrimp</menu_item_name>
+<menu_item_description>Crispy Coconut Shrimp</menu_item_description>
+<menu_item_price>7.95</menu_item_price>
+<menu_item_calories>350</menu_item_calories>
+</menu_item>
+<menu_item>
+<menu_item_name>Tempura Onion Rings</menu_item_name>
+<menu_item_description>With a honey Thai sauce</menu_item_description>
+<menu_item_price>7.95</menu_item_price>
+</menu_item>
+<menu_item>
+<menu_item_name>Calamari</menu_item_name>
+<menu_item_description>Our calamari is lightly fried and tossed with a sweet and spicy Asian mango sauce.</menu_item_description>
+<menu_item_price>8.85</menu_item_price>
+</menu_item>
+</menu_items>
+</menu_group>
+</menu_groups>
+</menu>
+</menus>
+</omf>

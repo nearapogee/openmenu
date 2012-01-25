@@ -3,6 +3,7 @@
 require 'rubygems'
 require 'hoe'
 
+Hoe.plugin :isolate
 Hoe.plugin :git
 Hoe.plugin :minitest
 

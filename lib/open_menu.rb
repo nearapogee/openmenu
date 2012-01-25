@@ -6,6 +6,14 @@ class OpenMenu
   attribute :uuid, String
   attribute :date_created, String
   attribute :accuracy, Integer
+  attribute :private, String
+
+  # Public: Test if this OpenMenu is private
+  #
+  # Returns true if private.
+  def private?
+    private == 'private'
+  end
 
   element :version, Float, :deep => true
 
