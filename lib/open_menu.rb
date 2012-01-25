@@ -184,7 +184,7 @@ class OpenMenu
     tag 'menu'
     
     attribute :name, String
-    attribute :uid, Integer
+    attribute :uid, String
     attribute :currency, String, :tag => 'currency_symbol'
     attribute :language, String
     attribute :disabled, String 
@@ -210,7 +210,7 @@ class OpenMenu
       tag 'menu_group'
 
       attribute :name, String
-      attribute :uid, Integer
+      attribute :uid, String
       attribute :disabled, String
       def disabled?
         disabled == 'disabled'
@@ -245,7 +245,7 @@ class OpenMenu
         include HappyMapper
         tag 'menu_item'
 
-        attribute :uid, Integer
+        attribute :uid, String
         %w(disabled special vegetarian vegan kosher halal gluten_free).each do |attr|
           attribute attr.to_s, String
           define_method("#{attr}?".to_s) { self.send(attr) == attr }

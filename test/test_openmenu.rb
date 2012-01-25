@@ -112,7 +112,7 @@ class TestOpenMenu< Test::Unit::TestCase
   def test_menu_parse
     menus = OpenMenu::Menu.parse(sample_om16)
     assert_equal 'Main Menu', menus.first.name
-    assert_equal 25, menus.first.uid
+    assert_equal '3e3bae08-27f2-11e1-80ac-00163eeae341', menus.first.uid
     assert_equal 'USD', menus.first.currency
     assert_equal 'en', menus.first.language
     assert_equal 'disabled', menus.first.disabled
@@ -126,7 +126,7 @@ class TestOpenMenu< Test::Unit::TestCase
 
     group = menus.first.groups.first
     assert_equal 'Appetizers', group.name
-    assert_equal 2, group.uid
+    assert_equal '3e3bae08-27f2-11e1-80ac-00163eeae342', group.uid
     assert_equal 'disabled', group.disabled
     assert_equal true, group.disabled?
     assert_equal 'Succulent appetizers.', group.description
@@ -143,7 +143,7 @@ class TestOpenMenu< Test::Unit::TestCase
     assert_equal 1.00, option_item.additional_cost
 
     item = group.items.first
-    assert_equal 65, item.uid
+    assert_equal '3e3bae08-27f2-11e1-80ac-00163eeae343', item.uid
     assert_equal 'disabled', item.disabled
     assert_equal true, item.disabled?
     assert_equal 'special', item.special
@@ -846,7 +846,7 @@ http://factual.com/31b8bfbf-08a3-478f-a4a4-d3e3143a37fb
 </parent_company>
 </restaurant_info>
 <menus>
-<menu name="Main Menu" currency_symbol="USD" uid="25" language="en" disabled="disabled">
+<menu name="Main Menu" currency_symbol="USD" uid="3e3bae08-27f2-11e1-80ac-00163eeae341" language="en" disabled="disabled">
 <menu_description>Great food, everyday.</menu_description>
 <menu_note>The mainstays.</menu_note>
 <menu_duration>
@@ -855,11 +855,11 @@ http://factual.com/31b8bfbf-08a3-478f-a4a4-d3e3143a37fb
 <menu_duration_time_end>22:00</menu_duration_time_end>
 </menu_duration>
 <menu_groups>
-<menu_group name="Appetizers" uid="2" disabled="disabled">
+<menu_group name="Appetizers" uid="3e3bae08-27f2-11e1-80ac-00163eeae342" disabled="disabled">
 <menu_group_description>Succulent appetizers.</menu_group_description>
 <menu_group_note>Warm up.</menu_group_note>
 <menu_items>
-<menu_item uid="65" disabled="disabled" special="special" vegetarian="vegetarian" vegan="vegan" kosher="kosher" halal="halal" gluten_free="gluten_free">
+<menu_item uid="3e3bae08-27f2-11e1-80ac-00163eeae343" disabled="disabled" special="special" vegetarian="vegetarian" vegan="vegan" kosher="kosher" halal="halal" gluten_free="gluten_free">
 <menu_item_name>Coconut Shrimp</menu_item_name>
 <menu_item_description>Menu Item Description</menu_item_description>
 <menu_item_price>7.95</menu_item_price>
@@ -911,7 +911,7 @@ Our calamari is lightly fried and tossed with a sweet and spicy Asian mango sauc
 </menu_item>
 </menu_items>
 </menu_group>
-<menu_group name="Salads" uid="3">
+<menu_group name="Salads" uid="3e3bae08-27f2-11e1-80ac-00163eeae344">
 <menu_group_description/>
 <menu_group_options>
 <menu_group_option name="Dressings" min_selected="1" max_selected="2">
@@ -981,15 +981,15 @@ Filled with lettuce, tomatoes, carrots, radishes, cucumbers and shredded cheese
 </menu_item>
 </menu_items>
 </menu_group>
-<menu_group name="Entrees" uid="1">
+<menu_group name="Entrees" uid="3e3bae08-27f2-11e1-80ac-00163eeae345">
 <menu_group_description/>
 <menu_items>
-<menu_item uid="1">
+<menu_item uid="3e3bae08-27f2-11e1-80ac-00163eeae346">
 <menu_item_name>Rack of Lamb</menu_item_name>
 <menu_item_description>Coffee Citrus Crusted Lamb</menu_item_description>
 <menu_item_price>22.95</menu_item_price>
 </menu_item>
-<menu_item uid="2">
+<menu_item uid="3e3bae08-27f2-11e1-80ac-00163eeae34c7">
 <menu_item_name>Soft Shell Crabs</menu_item_name>
 <menu_item_description>
 Almond encrusted, seasoned and sauteed in butter to a crispy brown
@@ -997,7 +997,7 @@ Almond encrusted, seasoned and sauteed in butter to a crispy brown
 <menu_item_price>19.95</menu_item_price>
 <menu_item_allergy_information allergens="shellfish, nuts">Reference allergens for allergy information</menu_item_allergy_information>
 </menu_item>
-<menu_item uid="3" special="special">
+<menu_item uid="3e3bae08-27f2-11e1-80ac-00163eeae348" special="special">
 <menu_item_name>Cioppino</menu_item_name>
 <menu_item_description>
 Fresh fish, scallops, mussels, calamari, and shrimp in a tomato-garlic saffron broth over linguini
@@ -1008,7 +1008,7 @@ Fresh fish, scallops, mussels, calamari, and shrimp in a tomato-garlic saffron b
 </menu_group>
 </menu_groups>
 </menu>
-<menu name="Late Night Menu" currency_symbol="USD" uid="35">
+<menu name="Late Night Menu" currency_symbol="USD" uid="3e3bae08-27f2-11e1-80ac-00163eeae349">
 <menu_description/>
 <menu_note/>
 <menu_duration>
@@ -1017,7 +1017,7 @@ Fresh fish, scallops, mussels, calamari, and shrimp in a tomato-garlic saffron b
 <menu_duration_time_end>23:00</menu_duration_time_end>
 </menu_duration>
 <menu_groups>
-<menu_group name="Bar Food" uid="1">
+<menu_group name="Bar Food" uid="3e3bae08-27f2-11e1-80ac-00163eeae340">
 <menu_group_description/>
 <menu_items>
 <menu_item>
