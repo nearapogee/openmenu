@@ -6,4 +6,6 @@ Rakefile
 lib/open_menu.rb
 lib/openmenu.rb
 test/sample.xml
+test/sample15.xml
+test/sample16.xml
 test/test_openmenu.rb
