@@ -156,6 +156,8 @@ class TestOpenMenu< Test::Unit::TestCase
     assert_equal true, item.kosher?
     assert_equal 'halal', item.halal
     assert_equal true, item.halal?
+    assert_equal 'gluten_free', item.gluten_free
+    assert_equal true, item.gluten_free?
     assert_equal 'Coconut Shrimp', item.name
     assert_equal 'Menu Item Description', item.description
     assert_equal 7.95, item.price
@@ -857,7 +859,7 @@ http://factual.com/31b8bfbf-08a3-478f-a4a4-d3e3143a37fb
 <menu_group_description>Succulent appetizers.</menu_group_description>
 <menu_group_note>Warm up.</menu_group_note>
 <menu_items>
-<menu_item uid="65" disabled="disabled" special="special" vegetarian="vegetarian" vegan="vegan" kosher="kosher" halal="halal">
+<menu_item uid="65" disabled="disabled" special="special" vegetarian="vegetarian" vegan="vegan" kosher="kosher" halal="halal" gluten_free="gluten_free">
 <menu_item_name>Coconut Shrimp</menu_item_name>
 <menu_item_description>Menu Item Description</menu_item_description>
 <menu_item_price>7.95</menu_item_price>

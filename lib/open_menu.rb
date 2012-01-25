@@ -246,7 +246,7 @@ class OpenMenu
         tag 'menu_item'
 
         attribute :uid, Integer
-        %w(disabled special vegetarian vegan kosher halal).each do |attr|
+        %w(disabled special vegetarian vegan kosher halal gluten_free).each do |attr|
           attribute attr.to_s, String
           define_method("#{attr}?".to_s) { self.send(attr) == attr }
         end
