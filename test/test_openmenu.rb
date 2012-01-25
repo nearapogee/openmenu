@@ -118,6 +118,7 @@ class TestOpenMenu< Test::Unit::TestCase
     assert_equal 'disabled', menus.first.disabled
     assert_equal true, menus.first.disabled?
     assert_equal 'Great food, everyday.', menus.first.description
+    assert_equal 'The mainstays.', menus.first.note
 
     assert_equal 'lunch-dinner', menus.first.duration.name
     assert_equal '11:00', menus.first.duration.start
@@ -129,6 +130,7 @@ class TestOpenMenu< Test::Unit::TestCase
     assert_equal 'disabled', group.disabled
     assert_equal true, group.disabled?
     assert_equal 'Succulent appetizers.', group.description
+    assert_equal 'Warm up.', group.note
 
     option = menus.first.groups[1].options.first
     assert_equal 'Dressings', option.name
@@ -844,6 +846,7 @@ http://factual.com/31b8bfbf-08a3-478f-a4a4-d3e3143a37fb
 <menus>
 <menu name="Main Menu" currency_symbol="USD" uid="25" language="en" disabled="disabled">
 <menu_description>Great food, everyday.</menu_description>
+<menu_note>The mainstays.</menu_note>
 <menu_duration>
 <menu_duration_name>lunch-dinner</menu_duration_name>
 <menu_duration_time_start>11:00</menu_duration_time_start>
@@ -852,6 +855,7 @@ http://factual.com/31b8bfbf-08a3-478f-a4a4-d3e3143a37fb
 <menu_groups>
 <menu_group name="Appetizers" uid="2" disabled="disabled">
 <menu_group_description>Succulent appetizers.</menu_group_description>
+<menu_group_note>Warm up.</menu_group_note>
 <menu_items>
 <menu_item uid="65" disabled="disabled" special="special" vegetarian="vegetarian" vegan="vegan" kosher="kosher" halal="halal">
 <menu_item_name>Coconut Shrimp</menu_item_name>
@@ -1004,6 +1008,7 @@ Fresh fish, scallops, mussels, calamari, and shrimp in a tomato-garlic saffron b
 </menu>
 <menu name="Late Night Menu" currency_symbol="USD" uid="35">
 <menu_description/>
+<menu_note/>
 <menu_duration>
 <menu_duration_name>late-night</menu_duration_name>
 <menu_duration_time_start>20:00</menu_duration_time_start>

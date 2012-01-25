@@ -193,6 +193,7 @@ class OpenMenu
     end
 
     element :description, String, :tag => "menu_description"
+    element :note, String, :tag => "menu_note"
 
     class Duration
       include HappyMapper
@@ -216,6 +217,7 @@ class OpenMenu
       end
 
       element :description, String, :tag => 'menu_group_description'
+      element :note, String, :tag => "menu_group_note"
 
       class Option
         include HappyMapper
