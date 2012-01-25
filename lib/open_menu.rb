@@ -186,6 +186,7 @@ class OpenMenu
     attribute :name, String
     attribute :uid, Integer
     attribute :currency, String, :tag => 'currency_symbol'
+    attribute :language, String
     attribute :disabled, String 
     def disabled?
       disabled == 'disabled'

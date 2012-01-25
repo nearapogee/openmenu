@@ -19,7 +19,7 @@ class TestOpenMenu< Test::Unit::TestCase
     assert_equal "Full Description", @om.full_description
     assert_equal "independent", @om.business_type
     assert_equal "x123z", @om.location_id
-    assert_equal 1, @om.mobile
+    assert_equal 1, @om.mobile # 1.6
     assert_equal "-81.039833", @om.longitude
     assert_equal "33.999458", @om.latitude
     assert_equal -5.00, @om.utc_offset
@@ -114,6 +114,7 @@ class TestOpenMenu< Test::Unit::TestCase
     assert_equal 'Main Menu', menus.first.name
     assert_equal 25, menus.first.uid
     assert_equal 'USD', menus.first.currency
+    assert_equal 'en', menus.first.language
     assert_equal 'disabled', menus.first.disabled
     assert_equal true, menus.first.disabled?
     assert_equal 'Great food, everyday.', menus.first.description
@@ -841,7 +842,7 @@ http://factual.com/31b8bfbf-08a3-478f-a4a4-d3e3143a37fb
 </parent_company>
 </restaurant_info>
 <menus>
-<menu name="Main Menu" currency_symbol="USD" uid="25" disabled="disabled">
+<menu name="Main Menu" currency_symbol="USD" uid="25" language="en" disabled="disabled">
 <menu_description>Great food, everyday.</menu_description>
 <menu_duration>
 <menu_duration_name>lunch-dinner</menu_duration_name>
