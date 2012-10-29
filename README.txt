@@ -1,6 +1,6 @@
 = openmenu
 
-* https://github.com/matthewcalebsmith/openmenu
+* https://github.com/nearapogee/openmenu
 
 == DESCRIPTION:
 

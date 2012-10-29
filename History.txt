@@ -1,3 +1,10 @@
+=== 0.2.1 / 2012-10-29
+
+* 1 bug fix:
+
+  * fix url to homepage.
+
+
 === 0.1.1 / 2011-08-02
 
 * 1 major enhancement
